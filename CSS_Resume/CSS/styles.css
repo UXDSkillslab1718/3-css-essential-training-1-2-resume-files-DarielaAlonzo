@@ -1,3 +1,41 @@
+/* colors used
+#FFECF0; pink
+#EDF2F4; gray
+*/
+
+/* Website styles */
 body {
-  background: lightblue;
+
+}
+
+a {
+	color: #000000
+
+}
+
+a:hover {
+background-color: lightgray;
+}
+
+
+/* Header and footer*/
+header, footer {
+	background: #FFECF0;
+	color: black;
+}
+
+header h1, header h2 {
+	color: gray;
+}
+
+/* Work Experience */
+.work {
+	background: #EDF2F4;
+}
+
+
+/* Education */
+
+.education {
+	background: #EDF2F4;
 }
