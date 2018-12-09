@@ -33,12 +33,15 @@ margin: 0;
   width: 70%;
   float: left;
   padding-left: 20px;
-    min-height: 175px;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 h1{
   font-family: 'Charmonman', cursive;
-	color: gray;
+	color: white;
   text-align: center;
 }
 
@@ -46,9 +49,13 @@ h2{
 margin-top: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
 /* Header and footer*/
 header{
-	background: #FFECF0;
+	background: #008080;
 	color: black;
 }
 
@@ -62,7 +69,7 @@ header h2 {
 }
 
 footer {
- background: #FFECF0;
+ background: #008080;
  text-align: center;
  color: black;
 }
@@ -82,7 +89,17 @@ background-color: lightgray;
 
 /* Work Experience */
 .work {
-	background: #EDF2F4;
+	background: lightgray;
+}
+
+h3 ~ p{
+  margin: 0;
+}
+.job-description{
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+  margin-top: 0;
 }
 
 
@@ -90,6 +107,9 @@ background-color: lightgray;
 
 .education {
 	background: gray;
+}
+p + h3{
+  margin-top: 30px;
 }
 
 .contact-info a   {
