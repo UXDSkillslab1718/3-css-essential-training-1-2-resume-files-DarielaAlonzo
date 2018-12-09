@@ -4,8 +4,36 @@
 */
 
 /* Website styles */
+
+html{
+  box-sizing: border-box;
+}
+*,*:before, *:after{
+  box-sizing: inherit;
+}
 body {
 font-family: 'Lato', sans-serif;
+margin: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.col-narrow {
+  width: 30%;
+  float:left;
+
+}
+
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+    min-height: 175px;
 }
 
 h1{
@@ -14,27 +42,32 @@ h1{
   text-align: center;
 }
 
+h2{
+margin-top: 0;
+}
+
 /* Header and footer*/
-header, footer {
+header{
 	background: #FFECF0;
 	color: black;
 }
 
+.profile-img{
+  border-radius: 50%;
+}
+
 header h2 {
 	color: black;
+  margin: 0;
 }
 
-/* Work Experience */
-.work {
-	background: #EDF2F4;
+footer {
+ background: #FFECF0;
+ text-align: center;
+ color: black;
 }
 
-
-/* Education */
-
-.education {
-	background: #EDF2F4;
-}
+/*links */
 
 a {
 	color: #000000
@@ -45,9 +78,22 @@ a:hover {
 background-color: lightgray;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
+/*sections */
+
+/* Work Experience */
+.work {
+	background: #EDF2F4;
+}
+
+
+/* Education */
+
+.education {
+	background: gray;
+}
+
+.contact-info a   {
+  background: white;
+  padding:  20px;
+  display: inline-block;
 }
