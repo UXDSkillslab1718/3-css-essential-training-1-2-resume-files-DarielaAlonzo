@@ -19,24 +19,21 @@ margin: 0;
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 60px 50px;
   overflow: hidden;
 }
 
-.col-narrow {
-  width: 30%;
-  float:left;
-
-}
-
-.col-wide {
-  width: 70%;
-  float: left;
-  padding-left: 20px;
-}
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.btn{
+  text-decoration: none;
+  background: white;
+  color: #gray;
+  padding: 10px;
+  display: inline-block;
 }
 
 h1{
@@ -57,6 +54,14 @@ h3 {
 header{
 	background: #008080;
 	color: black;
+  padding-top: 50px;
+  position: relative;
+}
+
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .profile-img{
@@ -66,6 +71,25 @@ header{
 header h2 {
 	color: black;
   margin: 0;
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 footer {
@@ -106,8 +130,11 @@ h3 ~ p{
 /* Education */
 
 .education {
-	background: gray;
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(165, 165, 165, 0.8)),
+  url(../images/Biomedical.jpg) no-repeat fixed ;
+  background-size: cover;
 }
+
 p + h3{
   margin-top: 30px;
 }
@@ -116,4 +143,28 @@ p + h3{
   background: white;
   padding:  20px;
   display: inline-block;
+}
+
+@media (min-width: 900px){
+  .col-narrow {
+    width: 30%;
+    float:left;
+
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+
+}
+
+@media (max-width:899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
 }
